@@ -1,0 +1,24 @@
+
+::-webkit-scrollbar {
+  width: 20px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color:rgb(206, 222, 111);
+  border-radius: 20px;
+ 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(rgb(255, 173, 10),rgb(136, 22, 22));
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: bisque;
+ cursor: pointer;
+}

@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin:0;
+    
+}
+.home{
+    background-color: wheat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color: black;
+    
+    .school-cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:1rem 1rem;
+            height:100%;
+            width: 100%;
+        .school{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:1rem 1rem;
+            height:100%;
+            width: 100%;
+            //background-color: blue;
+           
+            .firstimg{
+                position: absolute;
+                border-radius: 20px ;
+                box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);  
+                height: 80vh;
+                width:80vw;
+                animation: zoomIN forwards 12s ;
+                transition: all ease-in-out 0.5s;
+               background-blend-mode: soft-light;
+            }
+            .secondimg{
+                position: absolute;
+                height: 80vh;
+                width:80vw;
+                border-radius: 20px ;
+                box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);  
+                transition: all ease-in-out 0.5s;
+                animation:appear forwards 9s;
+                background-blend-mode: soft-light;
+            }
+            .thirdimg{
+                position: absolute;
+                opacity: 1;
+                height: 80vh;
+                width:80vw;
+                border-radius: 20px ;
+                box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);  
+                transition: all ease-in-out 0.5s;
+                animation:appears forwards 24s;
+                background-blend-mode: soft-light;
+            }
+            .fourthimg{
+                position: absolute;
+                border-radius: 20px ;
+                box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);  
+                height:300vh;
+                width:300vw;
+                animation: zoomout forwards 23s ;
+                transition: all ease-in-out 0.5s;
+                background-blend-mode: soft-light;
+            }
+    
+        }
+
+    }
+    
+
+
+}
+@keyframes zoomIN {
+    0%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(1);
+
+    }
+    30%{
+        transform: scale(5);
+       
+        visibility: hidden;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    40%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    65%{
+        transform: scale(1);
+
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(5);
+
+    }
+    
+}
+@keyframes appears {
+    0%{
+        opacity:0;
+        transform: scale(1);
+
+    }
+    35%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    40%{
+        opacity: 1;
+        transform: scale(1);
+    }
+  
+    100%{
+        opacity: 0;
+        transform: scale(5);
+
+    }
+    
+}
+@keyframes zoomout {
+    0%{
+        opacity:0
+
+
+    }
+    70%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.2);
+    }
+
+    
+}

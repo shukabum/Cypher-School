@@ -1,0 +1,212 @@
+.acad-page{
+    height: 100vh;
+    width:100%;
+    //background-color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    background-color: wheat;
+    //background-size: 400% 400%;
+    header{
+        height: 3rem;
+        //background-color: yellow;
+        //margin-top: -40%;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        position: fixed;
+        color:rgb(29, 28, 28);
+        font-size: 20px;
+        font-family: monospace;
+        font-weight: 600;
+        h1{
+            font-weight: 900;
+        }
+    }
+    .tbl{
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
+        //margin-left: -25%;
+        
+        height:50vh;
+        width: 50vw;
+       // background-color: yellow;
+        .table-data{
+            position: fixed;
+            //background-color: blue;
+            width: 40rem;
+            display:block;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+            section{
+                display: grid;
+                height: 80px;
+                
+                //position: absolute;
+                grid-auto-flow: row;
+                grid-auto-columns: 1fr 1fr;
+                grid-column-gap: 20px;
+                grid-row-gap: 7px;
+                grid-template-columns: 1fr 1fr;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    label{
+                        font-family: monospace;
+                        font-size: 2rem;
+                        font-weight: 900;
+                    }
+                    select{
+                        display: block;
+                        width: 80%;
+                        height: 40px;
+                        padding: 8px 12px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        //line-height: ;
+                        color: #859335;
+                       // vertical-align: middle;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;  
+                        font-family: monospace;   
+                        letter-spacing: 2px;
+                        
+                      }
+                }
+                
+                
+       
+            }
+            .search-br{
+                display: flex;
+                justify-content: center;
+                //  align-items: center;
+                height:50px;
+                width:100%;
+                gap: 1rem;
+                margin-top: 1rem;
+                font-family: monospace;
+                gap:1rem;
+                
+                input{
+                    height: 3rem;
+                    padding: 1rem;
+                    
+                    border-radius: 20px;
+                    opacity: 0.7;
+                    font-size: 15px;
+                    border: none;
+                    font-family: monospace;
+                }
+                input:focus{
+                    opacity: 1;
+                    //border:1px solid #333;
+                }
+                .sea{
+                    width: 50px;
+                    font-size: 30px;
+                    background: transparent;
+                    border: none;
+                    :hover{
+                        cursor: pointer;
+                        color: #333;
+                    }
+
+
+                }
+
+            }
+            
+        }
+        table{
+            height: 40vh;
+            width:40%;
+            margin-top:10%;
+           // border:1px  #fff solid ;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            //background-color: #333;
+            
+            align-items: center;
+            tbody{
+                height: 100%;
+                width:100%;
+                font-family: monospace;
+                color: rgb(40, 91, 11);
+                //background-color: green;
+                display: flex;
+                flex-direction: column;
+               // justify-content: ;
+                align-items: center;
+                th{
+                    width: 2000px;
+                    
+                   // padding: 1rem;
+                    
+                    //width:50%;
+                    //font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+                tr{
+                    display: flex;
+                    //align-items: center;
+
+                    //justify-content: space-evenly;
+                    //padding: 1rem;
+                    width: 100%;
+                   // background-color: #fff;
+                    
+                }
+                .data-row{
+                    height:25vh;
+                    width:100%;
+                    overflow:auto;
+                    padding: 0.5rem;
+                    scroll-behavior: smooth;
+                    border:3px solid #032e07;
+                    border-radius:10px ;
+                    ::-webkit-scrollbar-button{
+                        visibility: visible;
+                    }
+                    td{
+                        color: rgb(37, 35, 35);
+                        
+                         width: 100%;
+                         text-decoration: none;
+                         list-style: none;
+                        padding-bottom: 2px;
+                        .names_rows{
+                            margin-left: 5%;
+                            color: rgb(15, 164, 209);
+                            
+                        }
+                        .marks{
+                            text-align: center;
+                        }
+
+                    }
+                   
+                }
+                
+            }
+            
+            
+        }
+    }
+    
+  
+
+}
+
